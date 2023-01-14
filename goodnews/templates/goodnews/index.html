@@ -1,0 +1,80 @@
+{% extends 'goodnews/base.html' %}
+{% block content %}
+ <div>
+   <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">About us</h5>
+    <p class="card-text">This page tells you more about the Goodnews club. It also contains the mission and vision statements of the club</p>
+    <a href="{% url 'about' %}" class="btn btn-primary">Visit Page</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+     <p></p>
+</div><br>
+   <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Upcoming Events and Announcements</h5>
+    <p class="card-text">Get firsthand information about our upcoming events and be the first to hear of our latest announcements</p>
+    <a href="{% url 'event' %}" class="btn btn-primary">Visit Page</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div><br>
+   <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Support Goodnews Club</h5>
+    <p class="card-text">Make any time of support to the Goodnews club either financially or otherwise. Every form of support to the club will be appreciated</p>
+    <a href="{% url 'support' %}" class="btn btn-primary">Visit Page</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div><br>
+   <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Contact Us</h5>
+    <p class="card-text">Reach out to Goodnews club through any of our platforms and we will respond to your messages</p>
+    <a href="{% url 'contact' %}" class="btn btn-primary">Visit Page</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div><br>
+<div class="card text-center">
+     <div class="clearfix">
+ {% for pic in pics %}
+  <img src="{{ pic.ad_img.url }}" max-width="10px" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+  <p>
+    A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+  </p>
+
+  <p>
+    As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+  </p>
+
+  <p>
+    And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+  </p>
+{% endfor %}
+</div>
+</div>
+</div>
+ </div>
+{% endblock %}
+
+
+
+
+
+
+

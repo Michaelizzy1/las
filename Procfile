@@ -1,0 +1,1 @@
+web: gunicorn goodnews_club.wsgi --log-file -
