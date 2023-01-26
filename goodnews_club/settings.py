@@ -140,5 +140,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = BASE_DIR / 'uploads'
 MEDIA_URL = '/files/'
 
-CSRF_TRUSTED_ORIGINS = ['https://domain.name']
-CSRF_TRUSTED_ORIGINS = ['https://*domain.name']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-0a82.up.railway.app/admin']
+CSRF_TRUSTED_ORIGINS = ['https://*web-production-0a82.up.railway.app/admin/login/?next=/admin/']
