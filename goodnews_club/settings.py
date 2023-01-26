@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'goodnews_club.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'jC3eekMs1jkfTdZr33C8',
+        'HOST': 'containers-us-west-163.railway.app',
+        'PORT': '6723',
     }
 }
 
